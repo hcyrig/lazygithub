@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "lazyapi",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/hcyrig/lazyapi.git",
+      "state" : {
+        "revision" : "e9f2ce04ba313713f93c5803c377fe42d7c49647",
+        "version" : "0.0.2"
+      }
+    },
+    {
+      "identity" : "nofoundation",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/hcyrig/NOFoundation.git",
+      "state" : {
+        "revision" : "73bee6e0e9ac689a6e728af1322ef8d207bd7be7",
+        "version" : "0.2.6"
+      }
+    }
+  ],
+  "version" : 2
+}

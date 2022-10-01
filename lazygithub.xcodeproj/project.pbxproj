@@ -1,0 +1,471 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2301580A28E88ED600AEB24F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2301580928E88ED600AEB24F /* Assets.xcassets */; };
+		2301582C28E88F3C00AEB24F /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2301581728E88F3C00AEB24F /* MainWindowController.swift */; };
+		2301582D28E88F3C00AEB24F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2301581828E88F3C00AEB24F /* Main.storyboard */; };
+		2301582E28E88F3C00AEB24F /* CSVSupportable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2301581B28E88F3C00AEB24F /* CSVSupportable.swift */; };
+		2301582F28E88F3C00AEB24F /* GitHubHTTPAPISearchRepositories+Repo+CSVSupportable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2301581E28E88F3C00AEB24F /* GitHubHTTPAPISearchRepositories+Repo+CSVSupportable.swift */; };
+		2301583328E88F3C00AEB24F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2301582328E88F3C00AEB24F /* MainViewController.swift */; };
+		2301583428E88F3C00AEB24F /* MainViewController+CSVActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2301582528E88F3C00AEB24F /* MainViewController+CSVActions.swift */; };
+		2301583528E88F3C00AEB24F /* MainViewController+UIActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2301582628E88F3C00AEB24F /* MainViewController+UIActions.swift */; };
+		2301583628E88F3C00AEB24F /* MainViewController+DiscordHTTPClientActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2301582728E88F3C00AEB24F /* MainViewController+DiscordHTTPClientActions.swift */; };
+		2301583728E88F3C00AEB24F /* MainViewController+UI+PopUps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2301582828E88F3C00AEB24F /* MainViewController+UI+PopUps.swift */; };
+		2301583828E88F3C00AEB24F /* MainViewController+TextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2301582928E88F3C00AEB24F /* MainViewController+TextFieldDelegate.swift */; };
+		2301583928E88F3C00AEB24F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2301582B28E88F3C00AEB24F /* AppDelegate.swift */; };
+		23659FF128E8BEF90059E769 /* lazyapi in Frameworks */ = {isa = PBXBuildFile; productRef = 23659FF028E8BEF90059E769 /* lazyapi */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2301580228E88ED500AEB24F /* lazygithub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lazygithub.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2301580928E88ED600AEB24F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2301580E28E88ED600AEB24F /* lazygithub.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = lazygithub.entitlements; sourceTree = "<group>"; };
+		2301581728E88F3C00AEB24F /* MainWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
+		2301581828E88F3C00AEB24F /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		2301581B28E88F3C00AEB24F /* CSVSupportable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSVSupportable.swift; sourceTree = "<group>"; };
+		2301581E28E88F3C00AEB24F /* GitHubHTTPAPISearchRepositories+Repo+CSVSupportable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GitHubHTTPAPISearchRepositories+Repo+CSVSupportable.swift"; sourceTree = "<group>"; };
+		2301582328E88F3C00AEB24F /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		2301582528E88F3C00AEB24F /* MainViewController+CSVActions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MainViewController+CSVActions.swift"; sourceTree = "<group>"; };
+		2301582628E88F3C00AEB24F /* MainViewController+UIActions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MainViewController+UIActions.swift"; sourceTree = "<group>"; };
+		2301582728E88F3C00AEB24F /* MainViewController+DiscordHTTPClientActions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MainViewController+DiscordHTTPClientActions.swift"; sourceTree = "<group>"; };
+		2301582828E88F3C00AEB24F /* MainViewController+UI+PopUps.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MainViewController+UI+PopUps.swift"; sourceTree = "<group>"; };
+		2301582928E88F3C00AEB24F /* MainViewController+TextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MainViewController+TextFieldDelegate.swift"; sourceTree = "<group>"; };
+		2301582B28E88F3C00AEB24F /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		230157FF28E88ED500AEB24F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23659FF128E8BEF90059E769 /* lazyapi in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		230157F928E88ED500AEB24F = {
+			isa = PBXGroup;
+			children = (
+				2301580428E88ED500AEB24F /* lazygithub */,
+				2301580328E88ED500AEB24F /* Products */,
+				23CD491428E8902F00C5747F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2301580328E88ED500AEB24F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2301580228E88ED500AEB24F /* lazygithub.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2301580428E88ED500AEB24F /* lazygithub */ = {
+			isa = PBXGroup;
+			children = (
+				2301581428E88F3C00AEB24F /* classes */,
+				2301580928E88ED600AEB24F /* Assets.xcassets */,
+				2301580E28E88ED600AEB24F /* lazygithub.entitlements */,
+			);
+			path = lazygithub;
+			sourceTree = "<group>";
+		};
+		2301581428E88F3C00AEB24F /* classes */ = {
+			isa = PBXGroup;
+			children = (
+				2301581528E88F3C00AEB24F /* main */,
+				2301582A28E88F3C00AEB24F /* app-delegate */,
+			);
+			path = classes;
+			sourceTree = "<group>";
+		};
+		2301581528E88F3C00AEB24F /* main */ = {
+			isa = PBXGroup;
+			children = (
+				2301581628E88F3C00AEB24F /* window */,
+				2301581928E88F3C00AEB24F /* model */,
+				2301582228E88F3C00AEB24F /* view-controller */,
+			);
+			path = main;
+			sourceTree = "<group>";
+		};
+		2301581628E88F3C00AEB24F /* window */ = {
+			isa = PBXGroup;
+			children = (
+				2301581728E88F3C00AEB24F /* MainWindowController.swift */,
+				2301581828E88F3C00AEB24F /* Main.storyboard */,
+			);
+			path = window;
+			sourceTree = "<group>";
+		};
+		2301581928E88F3C00AEB24F /* model */ = {
+			isa = PBXGroup;
+			children = (
+				23CD491828E8906100C5747F /* repo */,
+				2301581A28E88F3C00AEB24F /* csv */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		2301581A28E88F3C00AEB24F /* csv */ = {
+			isa = PBXGroup;
+			children = (
+				2301581B28E88F3C00AEB24F /* CSVSupportable.swift */,
+			);
+			path = csv;
+			sourceTree = "<group>";
+		};
+		2301582228E88F3C00AEB24F /* view-controller */ = {
+			isa = PBXGroup;
+			children = (
+				2301582328E88F3C00AEB24F /* MainViewController.swift */,
+				2301582428E88F3C00AEB24F /* extensions */,
+			);
+			path = "view-controller";
+			sourceTree = "<group>";
+		};
+		2301582428E88F3C00AEB24F /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2301582528E88F3C00AEB24F /* MainViewController+CSVActions.swift */,
+				2301582628E88F3C00AEB24F /* MainViewController+UIActions.swift */,
+				2301582728E88F3C00AEB24F /* MainViewController+DiscordHTTPClientActions.swift */,
+				2301582828E88F3C00AEB24F /* MainViewController+UI+PopUps.swift */,
+				2301582928E88F3C00AEB24F /* MainViewController+TextFieldDelegate.swift */,
+			);
+			path = extensions;
+			sourceTree = "<group>";
+		};
+		2301582A28E88F3C00AEB24F /* app-delegate */ = {
+			isa = PBXGroup;
+			children = (
+				2301582B28E88F3C00AEB24F /* AppDelegate.swift */,
+			);
+			path = "app-delegate";
+			sourceTree = "<group>";
+		};
+		23CD491428E8902F00C5747F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		23CD491828E8906100C5747F /* repo */ = {
+			isa = PBXGroup;
+			children = (
+				2301581E28E88F3C00AEB24F /* GitHubHTTPAPISearchRepositories+Repo+CSVSupportable.swift */,
+			);
+			path = repo;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2301580128E88ED500AEB24F /* lazygithub */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2301581128E88ED600AEB24F /* Build configuration list for PBXNativeTarget "lazygithub" */;
+			buildPhases = (
+				230157FE28E88ED500AEB24F /* Sources */,
+				230157FF28E88ED500AEB24F /* Frameworks */,
+				2301580028E88ED500AEB24F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = lazygithub;
+			packageProductDependencies = (
+				23659FF028E8BEF90059E769 /* lazyapi */,
+			);
+			productName = lazygithub;
+			productReference = 2301580228E88ED500AEB24F /* lazygithub.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		230157FA28E88ED500AEB24F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					2301580128E88ED500AEB24F = {
+						CreatedOnToolsVersion = 14.0;
+					};
+				};
+			};
+			buildConfigurationList = 230157FD28E88ED500AEB24F /* Build configuration list for PBXProject "lazygithub" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 230157F928E88ED500AEB24F;
+			packageReferences = (
+				23659FEF28E8BEF90059E769 /* XCRemoteSwiftPackageReference "lazyapi" */,
+			);
+			productRefGroup = 2301580328E88ED500AEB24F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2301580128E88ED500AEB24F /* lazygithub */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2301580028E88ED500AEB24F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2301580A28E88ED600AEB24F /* Assets.xcassets in Resources */,
+				2301582D28E88F3C00AEB24F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		230157FE28E88ED500AEB24F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2301582E28E88F3C00AEB24F /* CSVSupportable.swift in Sources */,
+				2301583928E88F3C00AEB24F /* AppDelegate.swift in Sources */,
+				2301583528E88F3C00AEB24F /* MainViewController+UIActions.swift in Sources */,
+				2301582F28E88F3C00AEB24F /* GitHubHTTPAPISearchRepositories+Repo+CSVSupportable.swift in Sources */,
+				2301583428E88F3C00AEB24F /* MainViewController+CSVActions.swift in Sources */,
+				2301583828E88F3C00AEB24F /* MainViewController+TextFieldDelegate.swift in Sources */,
+				2301583728E88F3C00AEB24F /* MainViewController+UI+PopUps.swift in Sources */,
+				2301583328E88F3C00AEB24F /* MainViewController.swift in Sources */,
+				2301582C28E88F3C00AEB24F /* MainWindowController.swift in Sources */,
+				2301583628E88F3C00AEB24F /* MainViewController+DiscordHTTPClientActions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		2301580F28E88ED600AEB24F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 0.0.1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 0.0.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2301581028E88ED600AEB24F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 0.0.1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 0.0.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		2301581228E88ED600AEB24F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = lazygithub/lazygithub.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 0.0.1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 0.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.lazygithub;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		2301581328E88ED600AEB24F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = lazygithub/lazygithub.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 0.0.1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 0.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.lazygithub;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		230157FD28E88ED500AEB24F /* Build configuration list for PBXProject "lazygithub" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2301580F28E88ED600AEB24F /* Debug */,
+				2301581028E88ED600AEB24F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2301581128E88ED600AEB24F /* Build configuration list for PBXNativeTarget "lazygithub" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2301581228E88ED600AEB24F /* Debug */,
+				2301581328E88ED600AEB24F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		23659FEF28E8BEF90059E769 /* XCRemoteSwiftPackageReference "lazyapi" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hcyrig/lazyapi.git";
+			requirement = {
+				kind = exactVersion;
+				version = 0.0.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		23659FF028E8BEF90059E769 /* lazyapi */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 23659FEF28E8BEF90059E769 /* XCRemoteSwiftPackageReference "lazyapi" */;
+			productName = lazyapi;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 230157FA28E88ED500AEB24F /* Project object */;
+}
